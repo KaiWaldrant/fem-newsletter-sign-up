@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("./assets/fonts/Roboto-Bold.ttf") format('truetype'), url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 700 400;
+
+}
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 58%);
+  --color-blue-700: hwb(235 21% 69%);
+  --color-blue-800: hsl(234, 29%, 20%);
+  --color-red: hsl(4, 100%, 67%);
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 150%;
+  letter-spacing: 0px;
+  background-color: var(--color-blue-700);
+  align-content: center;
+  color: var(--color-blue-800);
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
+
+p, ul {
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+main {
+  background-color: var(--color-white);
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
