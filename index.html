@@ -20,7 +20,7 @@
       <!-- Sign-up form start -->
       <div class="content">
         <div class="content__text">
-          <h1>Stay updated!</h1>
+          <h1 class="content__heading">Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <div class="list">
             <div class="list-item"><img src="./assets/images/icon-list.svg" alt=""><p>Product discovery and building what matters</p></div>
@@ -40,10 +40,15 @@
     <!-- Sign-up form end -->
     <!-- Success message start -->
     <section class="success-card">
-      Thanks for subscribing!
-      A confirmation email has been sent to ash@loremcompany.com.
-      Please open it and click the button inside to confirm your subscription.
-      Dismiss message
+      <div class="success__content">
+        <img src="./assets/images/icon-success.svg" alt="success illustration">
+        <h2 class="content__heading">Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to <span id="signup-email">ash@loremcompany.com</span>.
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button>Dismiss message</button>
     </section>
     <!-- Success message end -->
   </main>

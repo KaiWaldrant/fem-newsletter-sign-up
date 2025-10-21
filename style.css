@@ -31,7 +31,7 @@ body {
   font-weight: 400;
 }
 
-h1 {
+.content__heading {
   font-size: 2.5rem;
   line-height: 100%;
   letter-spacing: 0px;
@@ -105,30 +105,63 @@ main {
     margin-bottom: 1.5rem;
   }
 
-  button {
-    width: 100%;
-    border-radius: 8px;
-    padding-block: 1rem;
-    background-color: var(--color-blue-800);
-    color: var(--color-white);
-    text-align: center;
-    font-weight: 700;
-  }
-
 }
 
-  #email-error {
-    margin-bottom: 0.5rem;
-    margin-left: auto;
-    font-weight: 700;
-    font-size: 0.75rem;
-    line-height: 150%;
-    color: var(--color-red);
-    display: none;
-  }
+button {
+  width: 100%;
+  border-radius: 8px;
+  padding-block: 1rem;
+  background-color: var(--color-blue-800);
+  color: var(--color-white);
+  text-align: center;
+  font-weight: 700;
+}
+
+button:active,
+button:focus {
+  color: var(--color-white);
+  background: linear-gradient(90deg,rgba(255, 106, 58, 1) 0%, rgba(255, 82, 123, 1) 100%);
+  border: none;
+}
+
+#email-error {
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 150%;
+  color: var(--color-red);
+  display: none;
+}
 
 .success-card {
+  max-width: 327px;
+  height: 623px;
   display: none;
+  flex-direction: column;
+  margin-top: 9rem;
+  justify-content: space-between;
+
+
+
+  > button {
+    justify-self: flex-end;
+  }
+}
+
+.success__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  > img {
+    max-width: 64px;
+  }
+
+  > p span {
+    font-weight: 700;
+  }
+
 }
 
 
