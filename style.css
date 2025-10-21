@@ -103,6 +103,12 @@ main {
     padding-inline: 1.5rem;
     padding-block: 1rem;
     margin-bottom: 1.5rem;
+
+    &.error {
+      border-color: var(--color-red);
+      background-color: hsl(2, 100%, 95%);
+      color: var(--color-red);
+    }
   }
 
 }
@@ -117,8 +123,7 @@ button {
   font-weight: 700;
 }
 
-button:active,
-button:focus {
+button .active {
   color: var(--color-white);
   background: linear-gradient(90deg,rgba(255, 106, 58, 1) 0%, rgba(255, 82, 123, 1) 100%);
   border: none;
@@ -134,7 +139,7 @@ button:focus {
   display: none;
 }
 
-.success-card {
+#success-card {
   max-width: 327px;
   height: 623px;
   display: none;
