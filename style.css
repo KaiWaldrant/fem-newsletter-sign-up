@@ -228,3 +228,36 @@ button.active {
 
 
 }
+
+@media (min-width: 1440px) {
+  #signup_card {
+    min-height: 641px;
+    flex-direction: row-reverse;
+    align-content: center;
+    gap: 4rem;
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
+    max-width: 902px;
+  }
+
+  .hero {
+    background-image: url("./assets/images/illustration-sign-up-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 593px;
+  }
+
+  .content {
+    max-width: 376px;
+    margin-inline: 0;
+    margin-block: auto;
+  }
+
+  .content,
+  .content__text {
+    gap: 2rem;
+  }
+
+
+}
