@@ -39,14 +39,15 @@ body {
 }
 
 main {
-
   background-color: var(--color-white);
   max-width: 375px;
+  margin-inline: auto;
+}
+
+#signup_card {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  position: relative;
-  margin-inline: auto;
 }
 
 .hero {
@@ -123,7 +124,7 @@ button {
   font-weight: 700;
 }
 
-button .active {
+button.active {
   color: var(--color-white);
   background: linear-gradient(90deg,rgba(255, 106, 58, 1) 0%, rgba(255, 82, 123, 1) 100%);
   border: none;
