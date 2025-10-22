@@ -37,9 +37,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const dismissButton = document.getElementById("dismiss-button");
 
   dismissButton.addEventListener("click", function () {
+    // Hide success card and show signup card
     successCard.style.display = "none";
     signupCard.style.removeProperty("display");
+
+    // Reset input field and styles
     emailInput.value = "";
+    emailInput.classList.remove("error");
+
+    // Disable the submit button again and remove "active" styling
+    submitButton.disabled = true;
+    submitButton.classList.remove("active");
+
+    // Hide any previous error message
+    const errorMessage = document.getElementById("email-error");
+    errorMessage.style.display = "none";
   });
   
 });
